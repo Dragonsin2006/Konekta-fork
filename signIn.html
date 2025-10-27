@@ -92,36 +92,7 @@
     </form>
   </main>
 
-  <script>
-    const step1 = document.getElementById('step1');
-    const step2 = document.getElementById('step2');
-    const pageTitle = document.getElementById('pageTitle');
-
-    step1.addEventListener('submit', e => {
-      e.preventDefault();
-
-      // You can add real validation or 2FA verification here before proceeding
-
-      // Hide step 1, show step 2
-      step1.classList.add('hidden');
-      step2.classList.remove('hidden');
-      pageTitle.textContent = 'Set Username & Password';
-    });
-
-    step2.addEventListener('submit', e => {
-      e.preventDefault();
-
-      // Collect all form data here or send to server as needed
-      alert('Account created successfully!');
-
-      // Optionally reset or redirect user
-      step2.reset();
-      step1.reset();
-      step2.classList.add('hidden');
-      step1.classList.remove('hidden');
-      pageTitle.textContent = 'Sign Up';
-    });
-  </script>
+  <script src="signIn.js"></script>
 
 </body>
 </html>
